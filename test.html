@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2c3e52;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 20px;
+}
+
+li a {
+  float: left;
+  display: block;
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+li b {
+	float: right;
+  display: block;
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+li b:hover {
+  background-color: #111;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 500px; 
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.down {
+	height: 200px;
+}
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ffffff;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #ffffff;}
+
+#customers tr:hover {background-color: #ffffff;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ffffff;
+  color: black;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttony{
+	float: right;
+	border-radius: 8px;
+  background-color: #96a4a5;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 5px;
+  cursor: pointer;
+}
+.buttonx {
+	float: right;
+	border-radius: 8px;
+  background-color: #18bb9c;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 5px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #96a4a5; border-radius: 2px;}
+.button2 {background-color: #2c3e52; border-radius: 2px;}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#"> Symfony Demo Application</a></li>
+  <li><b style='font-size:24px' class='fas' href="#">&#xf2f5; Logout</b></li>
+  <li><b class="fa fa-home" href="#"> Back to blog</b></li>
+  <li><b class="fa fa-list" href="#"> Post List</b></li>
+</ul>
+
+<h2><font color=#2c3e52>Post List</font><button class="buttonx"> + Create a new post </button></h2>
+<div class="row">
+  <div class="column left" style="background-color:#ffffff;">
+    <table id="customers">
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Published</th>
+    <th>Actions</th>
+  </tr>
+  <tr>
+    <td>Morbi tempus commodo mattis</td>
+    <td>anna_admin@symfony.com</td>
+    <td>2015-03-22 18:20</td>
+    <td><button class="button button1">Show</button><button class="button button2">Edit</button></td>
+  </tr>
+  <tr>
+    <td>Sed varius a risus eget aliqum</td>
+    <td>anna_admin@symfony.com</td>
+    <td>2015-03-21 18:20</td>
+    <td><button class="button button1">Show</button><button class="button button2">Edit</button></td>
+  </tr>
+  <tr>
+    <td>Aliquam sodales odio id eleifend tristique</td>
+    <td>anna_admin@symfony.com</td>
+    <td>2015-03-19 18:20</td>
+    <td><button class="button button1">Show</button><button class="button button2">Edit</button></td>
+  </tr>
+  <tr>
+    <td>Nulla porta lobortis ligula vel egesta</td>
+    <td>anna_admin@symfony.com</td>
+    <td>2015-03-18 18:20</td>
+    <td><button class="button button1">Show</button><button class="button button2">Edit</button></td>
+  </tr>
+  <tr>
+    <td>Curabitur aliquam euismond dolor non ormare</td>
+    <td>anna_admin@symfony.com</td>
+    <td>2015-03-17 18:20</td>
+    <td><button class="button button1">Show</button><button class="button button2">Edit</button></td>
+  </tr>
+  <tr>
+    <td>Sed varius a risus eget aliquam</td>
+    <td>anna_admin@symfony.com</td>
+    <td>2015-03-16 18:20</td>
+    <td><button class="button button1">Show</button><button class="button button2">Edit</button></td>
+  </tr>
+  <tr>
+    <td>Curabitur aliquam euismod dolor non ornare</td>
+    <td>anna_admin@symfony.com</td>
+    <td>2015-03-15 18:20</td>
+    <td><button class="button button1">Show</button><button class="button button2">Edit</button></td>
+  </tr>
+  <tr>
+    <td>Ut suscipt posuere justo at vulputate</td>
+    <td>anna_admin@symfony.com</td>
+    <td>2015-03-14 18:20</td>
+    <td><button class="button button1">Show</button><button class="button button2">Edit</button></td>
+  </tr>
+  <tr>
+    <td>Nulla porta lobortis ligula vel egesta</td>
+    <td>anna_admin@symfony.com</td>
+    <td>2015-03-13 18:20</td>
+    <td><button class="button button1">Show</button><button class="button button2">Edit</button></td>
+  </tr>
+  <tr>
+    <td>Eros diam egestas libero eu vulputate risus</td>
+    <td>anna_admin@symfony.com</td>
+    <td>2015-03-12 18:20</td>
+    <td><button class="button button1">Show</button><button class="button button2">Edit</button></td>
+  </tr>
+</table>
+  </div>
+  
+  <div class="column right" style="background-color: #ffffff;">
+    <div class="down" style="background-color: #ecf0f1;" align="center">
+    	<br><br>
+    	<p>This is a <b>demo application</b>built, in the Symfony Framework to illustrate the recommended way of developing Symfony application.</p>
+    	<p>For more information, check out the <font color="#18bb9c">Symfony Documentation.</font></p>
+    </div>
+    <br><br>
+    <p align="center">Click on this button to show the source code of the <b>Controller</b> and<b>templete</b> used to render this page.</p>
+   <button class="buttony"> Show source code </button>
+  </div>
+</div>
+
+</body>
+</html>
